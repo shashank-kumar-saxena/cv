@@ -1,0 +1,123 @@
+.contact-page
+{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color: rbga(255,255,255,.5);
+    backdrop-filter:blur(5px);
+    margin-left:-11px;
+}
+.form-align
+{
+    display: flex;
+    & .part-1
+    {
+        width:50%;
+        margin:1em;
+        & div
+        {
+            margin:1em;
+            & input
+            {
+                width: 100%;
+                border: none;
+                outline: none;
+                text-align:left;
+                padding:1em;
+                margin:.5em;
+                border-radius: 25px;
+                box-shadow: -5px -5px 12px rgba(255,255,255,1),
+                            -3px -3px 12px rgba(255,255,255,.6),
+                            inset 2px 2px 8px rgba(255,255,255,.5),
+                            2px 2px 12px rgba(0,0,0,.6);
+                            &:hover
+                            {                                
+                                box-shadow: inset -3px -3px  8px rgba(255,255,255,.5),
+                                -2px -2px  12px rgba(255,255,255,.5),
+                                2px 2px  8px rgba(255,255,255,.1),
+                               inset 2px 2px  12px rgba(0,0,0,.3);
+                                display: inline;
+                                transform: scale(.98);
+                            }
+            }
+        }
+    }
+    & .part-2
+    {
+        margin:1em;
+        width: 50%;
+        & textarea
+        {
+            width: 100%;
+            height: 90%;
+            border: none;
+            outline: none;
+            text-align:left;
+            padding:1em;
+            margin:.5em;
+            border-radius: 25px;
+            box-shadow: -5px -5px 12px rgba(255,255,255,1),
+                        -3px -3px 12px rgba(255,255,255,.6),
+                        inset 2px 2px 8px rgba(255,255,255,.5),
+                        2px 2px 12px rgba(0,0,0,.6);
+                        &:hover
+                        {                                
+                            box-shadow: inset -3px -3px  8px rgba(255,255,255,.5),
+                            -2px -2px  12px rgba(255,255,255,.5),
+                            2px 2px  8px rgba(255,255,255,.1),
+                           inset 2px 2px  12px rgba(0,0,0,.3);
+                            display: inline;
+                            transform: scale(.98);
+                        }
+        }
+    }
+}
+#submit-btn
+    {
+        margin: 1em;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        & input
+        {
+            width: 20%;
+            height: 90%;
+            border: none;
+            outline: none;
+            background: white;
+            text-align:Center;
+            padding:1em;
+            margin:.5em;
+            border-radius: 25px;
+            box-shadow: -5px -5px 12px rgba(255,255,255,1),
+                        -3px -3px 12px rgba(255,255,255,.6),
+                        inset 2px 2px 8px rgba(255,255,255,.5),
+                        2px 2px 12px rgba(0,0,0,.6);    
+                        &:hover
+                        {                                
+                            box-shadow: inset -3px -3px  8px rgba(255,255,255,.5),
+                            -2px -2px  12px rgba(255,255,255,.5),
+                            2px 2px  8px rgba(255,255,255,.1),
+                           inset 2px 2px  12px rgba(0,0,0,.3);
+                            display: inline;
+                            transform: scale(.98);
+                        }
+        }
+    }
+@media(max-width:768px) {
+    .form-align
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+        & .part-1
+    {
+        width:90%;
+    }
+        & .part-2
+          {
+        margin:1em;
+        width:90%;
+         }
+    }
+}

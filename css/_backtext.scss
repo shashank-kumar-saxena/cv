@@ -1,0 +1,156 @@
+.back-text 
+{
+    position: absolute;
+    min-height:100%;
+    width: 100%;
+}
+.spinner
+{
+    position: absolute;
+    top:-7%;
+    font-size: 8em;
+    color:brown;
+    animation: spinner 4s ease 0s infinite ;
+}
+@keyframes spinner {
+    0%,100%
+    {
+        right:25%
+    }
+    50%
+    {
+        right:35%
+    }
+}
+.square
+{
+    position: absolute;
+    top:5%;
+    color: darkblue;
+    left:10%;
+    font-size: 8em;
+    animation:square 3s steps(5) infinite;
+}
+@keyframes square {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    50%
+    {
+        transform: rotate(180eg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.back-text .back-items-value
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 9em;
+    font-family: Dela Gothic One;
+    font-style: italic;
+    opacity: .3;  
+    animation-name: Home;
+    animation-duration: 2.5s ;
+}
+@keyframes Home {
+    0%
+    {
+        left:-70%;
+    }
+    70%
+    {
+        left:10%;
+    }
+    100%
+    {
+        left:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;       
+    }
+}
+.back-text .back-items-value-other
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 9em;
+    font-family: Dela Gothic One;
+    font-style: italic;
+    opacity: .3;  
+    animation-name: Home2;
+    animation-duration: 2s;
+}
+@keyframes Home2 {
+    0%
+    {
+        left:-70%;
+    }
+    70%
+    {
+        left:10%;
+    }
+    100%
+    {
+        left:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;       
+    }
+}
+@media(max-width:600px)
+{
+    .back-text .Home
+    {
+        font-size:6em;
+    }
+    
+}
+.dots
+{
+    position: absolute;
+    left:2%;
+    bottom:20%;
+    color: orange;
+    line-height: .5em;
+    font-size:3em;
+    letter-spacing: 13px;
+    font-weight: 800;
+    animation:dot 3s linear infinite;
+}
+@keyframes dot {
+    0%,100%
+    {
+        bottom:20%;
+    }
+    50%
+    {
+        bottom:30%;
+    }
+}
+.triangle
+{
+    position: absolute;
+    right:7%;
+    bottom:15%;
+    color: rgb(0, 255, 221);
+    font-size:7em;
+    letter-spacing: 13m;
+    font-weight: 800;
+    animation:triangle 3s linear infinite;
+}
+@keyframes triangle {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}

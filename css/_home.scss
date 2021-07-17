@@ -1,0 +1,193 @@
+.Menu
+{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    z-index: 100;
+    width:100%;
+    height: 100%;
+    display: flex;
+    transition: 1s;
+    justify-content: center;
+    align-content: center;
+}
+.Menuvisible
+{
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    z-index: 100;
+    width:100%;
+    height: 100%;
+    background: rgba(255, 255, 255,1);
+    display: flex;
+    transition: 1s;
+    justify-content: center;
+    align-content: center;
+}
+#Menu-itmes
+{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+#Menu-itmes .column
+{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    box-shadow: -3px -3px  12px rgba(255,255,255,.9),
+                -2px -2px  15px rgba(255,255,255,.5),
+                inset 2px 2px  8px rgba(255,255,255,.5),
+                2px 2px  12px rgba(0,0,0,.5);
+}
+#Menu-itmes .column:hover
+{
+    box-shadow: inset -3px -3px  8px rgba(255,255,255,.5),
+                 -2px -2px  12px rgba(255,255,255,.5),
+                 2px 2px  8px rgba(255,255,255,.1),
+                inset 2px 2px  12px rgba(0,0,0,.3);
+}
+#Menu-itmes .column:hover span
+{
+    display: inline-block;
+    transform:scale(.88);
+}
+.main
+{
+    position:absolute;
+    z-index: 2;
+    margin-left: 0%;
+    width:100%;
+    height:100%;
+    background-color: rgba(255,255,255,.5);
+    backdrop-filter: blur(6px);
+}
+.header
+{
+    position: relative;
+    width: 100%;
+    padding: 1em;
+}
+.logo span
+{
+    font-family: monospace;
+    font-style: oblique;
+    background-color: none;
+    border-radius: 50%;
+    box-shadow: -3px -3px 12px rgba(255,255,255,.9),
+                -2px -2px 15px rgba(255,255,255,.5),
+            inset 2px 2px 8px rgba(255,255,255,.5),
+                    2px 2px 12px rgba(0,0,0,.5);
+    font-size: 1.5em;
+    width: fit-content;
+    padding: 10px;
+    margin: 0;
+}
+.Menu-bar i
+{
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    text-decoration: none;
+    text-transform: capitalize;
+    box-shadow: -3px -3px  12px rgba(255,255,255,.9),
+                -2px -2px  15px rgba(255,255,255,.5),
+                inset 2px 2px  8px rgba(255,255,255,.5),
+                2px 2px  8px rgba(0,0,0,.5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+}
+.Menu-bar i:hover
+{
+    box-shadow: inset -3px -3px  8px rgba(255,255,255,.5),
+                 -2px -2px  12px rgba(255,255,255,.5),
+                 2px 2px  8px rgba(255,255,255,.1),
+                inset 2px 2px  12px rgba(0,0,0,.3);
+}
+.Menu-bar i:hover span
+{
+    display: inline-block;
+    transform:scale(.88);
+}
+.Details
+{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width:100%;
+    height: 80vh;
+}
+.img
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-img
+{   
+    border-radius: 15%;
+    box-shadow: -7px -7px 12px rgba(255,255,255,.5),
+                -5px -5px 15px rgba(255,255,255,.5),
+                inset 5px 5px 12px rgba(255,255,255,.5),
+                      2px 2px 15px rgba(0, 0, 0, .4);
+    overflow: hidden;
+}
+.profile-img img
+{
+    max-width:auto;
+    height: 100%;
+}
+@media(max-width:768px) 
+{
+.data
+{ 
+    margin: 4em 0em 4em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}
+.data h5
+{
+    margin-bottom: 1em;
+    opacity:.5;
+}
+.data h1
+{
+    font-family:cursive;
+    font-size: 3em;
+    font-style: italic;
+}
+.data p
+{
+    padding: 10px;
+    width:fit-content;
+    font-family:cursive;
+    text-decoration: none;
+    font-weight: 500;
+    background: white;
+    border-radius: 10px;
+    box-shadow: -3px -3px  12px rgba(255,255,255,.9),
+                -2px -2px  12px rgba(255,255,255,.9),
+                inset 2px 2px  8px rgba(255,255,255,.3),
+                 2px 2px  12px rgba(0,0,0,1);
+}
+.data p:hover
+{
+    box-shadow: inset -3px -3px  8px rgba(255,255,255,.5),
+                 -2px -2px  12px rgba(255,255,255,.5),
+                 2px 2px  8px rgba(255,255,255,.1),
+                 2px 2px  12px rgba(0,0,0,.3);
+}
+.data p:hover span
+{
+    display: inline-block;
+    transform:scale(.93);
+}
