@@ -45,7 +45,6 @@
                 padding: 1em;
                 display: grid;
                 align-items: center;
-                justify-items: center;
                 margin-bottom: 2em;
                 border-radius: 10px;
                 box-shadow: -5px -5px  12px rgba(255,255,255,.9),
@@ -58,6 +57,19 @@
                     {
                         margin-bottom: 1em;
                     }
+                    a 
+                    {
+                        color: black;
+                        padding: 5px;
+                        background-color: white;
+                        margin-right: 1em;
+                        text-decoration: none;
+                        border-radius:15px;
+                        box-shadow: -5px -5px  12px rgba(255,255,255,.9),
+                        -2px -2px  12px rgba(255,255,255,.5),
+                        inset 2px 2px  8px rgba(255,255,255,.6),
+                         3px 3px  12px rgba(0,0,0,1);
+                    }
                 }
                 .source-code
                 {
@@ -67,6 +79,7 @@
         }
     }
 }
+
 @media(max-width:1250px)
 {
    .work .projects .projects-name

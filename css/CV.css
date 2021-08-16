@@ -967,7 +967,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  justify-items: center;
   margin-bottom: 2em;
   border-radius: 10px;
   -webkit-box-shadow: -5px -5px 12px rgba(255, 255, 255, 0.9), -2px -2px 12px rgba(255, 255, 255, 0.5), inset 2px 2px 8px rgba(255, 255, 255, 0.6), 3px 3px 12px black;
@@ -976,6 +975,17 @@
 
 .work .projects .projects-name .projects-data .project .img {
   margin-bottom: 1em;
+}
+
+.work .projects .projects-name .projects-data .project a {
+  color: black;
+  padding: 5px;
+  background-color: white;
+  margin-right: 1em;
+  text-decoration: none;
+  border-radius: 15px;
+  -webkit-box-shadow: -5px -5px 12px rgba(255, 255, 255, 0.9), -2px -2px 12px rgba(255, 255, 255, 0.5), inset 2px 2px 8px rgba(255, 255, 255, 0.6), 3px 3px 12px black;
+          box-shadow: -5px -5px 12px rgba(255, 255, 255, 0.9), -2px -2px 12px rgba(255, 255, 255, 0.5), inset 2px 2px 8px rgba(255, 255, 255, 0.6), 3px 3px 12px black;
 }
 
 .work .projects .projects-name .projects-data .source-code {
