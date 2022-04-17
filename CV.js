@@ -119,7 +119,7 @@ Education.addEventListener('click', Educationshow, false);
 var langName = document.querySelectorAll('.languages-name');
 function languagesShow(projectName, sNo) {
     if (projectName == 'pepsi') {
-        loopStyle();
+        loopStyle();//here loopStyle function use to make normal languages name
         langName[1].className = "languages-name languages-name-style " + 1;
         langName[2].className = "languages-name languages-name-style " + 2;
         langName[3].className = "languages-name languages-name-style " + 3;
@@ -127,7 +127,7 @@ function languagesShow(projectName, sNo) {
 
     }
     if (projectName == 'SMS') {
-        loopStyle();
+        loopStyle();//here loopStyle function use to make normal languages name
         langName[0].className = "languages-name languages-name-style " + 0;
         langName[3].className = "languages-name languages-name-style " + 3;
         langName[5].className = "languages-name languages-name-style " + 5;
@@ -135,7 +135,7 @@ function languagesShow(projectName, sNo) {
 
     }
     if (projectName == 'Fruits') {
-        loopStyle();
+        loopStyle();//here loopStyle function use to make normal languages name
         langName[1].className = "languages-name languages-name-style " + 1;
         langName[2].className = "languages-name languages-name-style " + 2;
         langName[3].className = "languages-name languages-name-style " + 3;
@@ -143,7 +143,7 @@ function languagesShow(projectName, sNo) {
 
     }
     if (projectName == 'Parking') {
-        loopStyle();
+        loopStyle();//here loopStyle function use to make normal languages name
         langName[1].className = "languages-name languages-name-style " + 1;
         langName[2].className = "languages-name languages-name-style " + 2;
         langName[3].className = "languages-name languages-name-style " + 3;
@@ -151,51 +151,51 @@ function languagesShow(projectName, sNo) {
         langName[5].className = "languages-name languages-name-style " + 5;
     }
     if (projectName == 'Tik-Tak-Toe') {
-        loopStyle();
+        loopStyle();//here loopStyle function use to make normal languages name
         langName[1].className = "languages-name languages-name-style " + 1;
         langName[3].className = "languages-name languages-name-style " + 4;
         langName[5].className = "languages-name languages-name-style " + 5;
 
     }
     if (projectName == 'Netflix') {
-        loopStyle();
+        loopStyle();//here loopStyle function use to make normal languages name
         langName[1].className = "languages-name languages-name-style " + 1;
         langName[2].className = "languages-name languages-name-style " + 2;
         langName[3].className = "languages-name languages-name-style " + 3;
         langName[5].className = "languages-name languages-name-style " + 5;
 
     } if (projectName == 'StarBucks') {
-        loopStyle();
+        loopStyle();//here loopStyle function use to make normal languages name
         langName[1].className = "languages-name languages-name-style " + 1;
         langName[2].className = "languages-name languages-name-style " + 2;
         langName[3].className = "languages-name languages-name-style " + 3;
         langName[5].className = "languages-name languages-name-style " + 5;
 
     } if (projectName == 'Quote') {
-        loopStyle();
+        loopStyle();//here loopStyle function use to make normal languages name
         langName[1].className = "languages-name languages-name-style " + 1;
         langName[2].className = "languages-name languages-name-style " + 2;
         langName[3].className = "languages-name languages-name-style " + 3;
         langName[5].className = "languages-name languages-name-style " + 5;
 
     } if (projectName == 'Amity') {
-        loopStyle();
+        loopStyle();//here loopStyle function use to make normal languages name
         langName[2].className = "languages-name languages-name-style " + 2;
         langName[3].className = "languages-name languages-name-style " + 3;
         langName[5].className = "languages-name languages-name-style " + 5;
 
     } if (projectName == 'Documentation') {
-        loopStyle();
+        loopStyle();//here loopStyle function use to make normal languages name
         langName[3].className = "languages-name languages-name-style " + 3;
         langName[5].className = "languages-name languages-name-style " + 5;
 
     } if (projectName == 'Nvidia') {
-        loopStyle();
+        loopStyle();//here loopStyle function use to make normal languages name
         langName[3].className = "languages-name languages-name-style " + 3;
         langName[5].className = "languages-name languages-name-style " + 5;
 
     } if (projectName == 'Tribute') {
-        loopStyle();
+        loopStyle();//here loopStyle function use to make normal languages name
         langName[3].className = "languages-name languages-name-style " + 3;
         langName[5].className = "languages-name languages-name-style " + 5;
 
