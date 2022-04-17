@@ -20,7 +20,8 @@
 }
 
 @-webkit-keyframes spinner {
-  0%, 100% {
+  0%,
+  100% {
     right: 25%;
   }
   50% {
@@ -29,7 +30,8 @@
 }
 
 @keyframes spinner {
-  0%, 100% {
+  0%,
+  100% {
     right: 25%;
   }
   50% {
@@ -39,24 +41,30 @@
 
 .square {
   position: absolute;
-  top: 5%;
+  top: 10%;
   color: darkblue;
-  left: 10%;
-  font-size: 8em;
-  -webkit-animation: square 3s steps(5) infinite;
-          animation: square 3s steps(5) infinite;
+  left: 20%;
+  font-weight: 800;
+  -webkit-animation: square 7s linear infinite;
+          animation: square 7s linear infinite;
 }
 
 @-webkit-keyframes square {
   0% {
+    font-size: 0em;
+    opacity: 1;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
   50% {
+    font-size: 7em;
+    opacity: .5;
     -webkit-transform: rotate(180eg);
             transform: rotate(180eg);
   }
   100% {
+    font-size: 14em;
+    opacity: 0;
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
@@ -64,14 +72,20 @@
 
 @keyframes square {
   0% {
+    font-size: 0em;
+    opacity: 1;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
   50% {
+    font-size: 7em;
+    opacity: .5;
     -webkit-transform: rotate(180eg);
             transform: rotate(180eg);
   }
   100% {
+    font-size: 14em;
+    opacity: 0;
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
@@ -215,7 +229,8 @@
 }
 
 @-webkit-keyframes dot {
-  0%, 100% {
+  0%,
+  100% {
     bottom: 20%;
   }
   50% {
@@ -224,7 +239,8 @@
 }
 
 @keyframes dot {
-  0%, 100% {
+  0%,
+  100% {
     bottom: 20%;
   }
   50% {

@@ -34,6 +34,7 @@ function Home() {
     document.getElementById("about-page").style.visibility = "Hidden";
     document.getElementById("contact-page").style.visibility = "hidden";
     document.getElementById("work").style.visibility = "hidden";
+    document.getElementById("certificate").style.visibility = 'hidden';
 
 }
 window.addEventListener('load', Home, false);
@@ -49,24 +50,31 @@ function about() {
     document.getElementById("contact-page").style.visibility = "hidden";
     document.getElementById("about-page").style.visibility = "visible";
     document.getElementById("work").style.visibility = "hidden";
+    document.getElementById("certificate").style.visibility = 'hidden';
 
 }
 var aboutBtn = document.getElementById("about");
 var aboutBtn2 = document.getElementById("about2");
 aboutBtn.addEventListener('click', about, false);
 aboutBtn2.addEventListener('click', about, false);
-//services
-function service() {
-    backText.textContent = 'service';
+//Certification portion
+function certificates() {
+    backText.textContent = 'Certificates';
+    document.getElementById("certificate").style.visibility = 'visible';
+    document.getElementById("main").style.visibility = "Hidden";
+    document.getElementById("contact-page").style.visibility = "hidden";
+    document.getElementById("about-page").style.visibility = "hidden";
+    document.getElementById("work").style.visibility = "hidden";
     closeMenu();
 }
 var serviceBtn = document.getElementById("services");
-serviceBtn.addEventListener('click', service, false);
+serviceBtn.addEventListener('click', certificates, false);
 //work
 function work() {
     backText.textContent = 'work';
     closeMenu();
     document.getElementById("main").style.visibility = "Hidden";
+    document.getElementById("certificate").style.visibility = 'hidden';
     document.getElementById("contact-page").style.visibility = "hidden";
     document.getElementById("about-page").style.visibility = "hidden";
     document.getElementById("work").style.visibility = "visible";
@@ -78,6 +86,7 @@ function contact() {
     backText.textContent = 'contact';
     closeMenu();
     document.getElementById("main").style.visibility = "Hidden";
+    document.getElementById("certificate").style.visibility = 'hidden';
     document.getElementById("about-page").style.visibility = "hidden";
     document.getElementById("contact-page").style.visibility = "visible";
     document.getElementById("work").style.visibility = "hidden";
