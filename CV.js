@@ -37,7 +37,7 @@ function Home() {
     document.getElementById("certificate").style.visibility = 'hidden';
 
 }
-window.addEventListener('load', Home, false);
+window.addEventListener('load', certificates, false);
 var homeBtn = document.getElementById("home");
 homeBtn.addEventListener('click', Home, false);
 //about
