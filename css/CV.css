@@ -1082,4 +1082,60 @@
     padding: 10px;
   }
 }
+
+.certificate {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rbga(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  margin-left: -11px;
+}
+
+.certificate .block {
+  position: absolute;
+  width: 100%;
+  height: 70vh;
+}
+
+.certificate .block .inside-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.certificate .block .btn {
+  color: black;
+  font-size: 3em;
+}
+
+.certificate .block .content {
+  position: relative;
+  width: 50%;
+}
+
+.certificate .block .content img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.certificate .block .right-btn {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
 /*# sourceMappingURL=CV.css.map */

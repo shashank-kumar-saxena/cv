@@ -254,3 +254,42 @@ projectsVar[10].addEventListener("click", function () {
 projectsVar[11].addEventListener("click", function () {
     languagesShow("Tribute", 11)
 }, false);
+
+
+
+//--------------Certification Portion----------------
+
+const arr = {//object of certificates
+    "ds": '<img src="certificates/DataStructure.png" alt="">',
+    "java": '<img src="certificates/JavaHackerrank.png" alt="">',
+    "dbms": '<img src="certificates/OracleDBMS.png" alt="">',
+    "js": '<img src="certificates/JS.png" alt="">',
+    "web": '<img src="certificates/WebDesign.png" alt="">'
+};
+var CerContent = document.getElementById("content");
+var leftBtn = document.getElementById("leftBtn");
+var rightBtn = document.getElementById("rightBtn");
+leftBtn.addEventListener("click", function () { changeFun(0) }, false);//changeFun is use for change the certificate images
+rightBtn.addEventListener("click", function () { changeFun(1) }, false);//changeFun is use for change the certificate images
+var i = 1;
+function changeFun(checker) {//checker variable use for moving button i.e arrow button
+
+    if (i == 1)
+        CerContent.innerHTML = arr.java;
+    if (i == 2)
+        CerContent.innerHTML = arr.js;
+    if (i == 3)
+        CerContent.innerHTML = arr.web;
+    if (i == 4)
+        CerContent.innerHTML = arr.dbms;
+    if (i == 5)
+        i = 0;
+    else if (i <= 0)
+        i = 5;
+    if (checker == 1) {
+        i++;
+    }
+    else if (checker == 0) {
+        i--;
+    }
+}
